@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Get to Know Dallin Jared</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="~/shortcut icon" href="technology-2.png">
+
+</head>
+<body>
+    <header>
+        <h1 class="title">@ViewBag.Title</h1>
+        <div class="main">
+            <div class="nav">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="calculateGrade">Calculate Grade</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    @RenderBody()
+
+    <footer>This is the Foot of the website</footer>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/gradeCalculator.js"></script>
+</body>
+</html>
